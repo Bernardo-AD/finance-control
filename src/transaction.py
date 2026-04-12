@@ -2,7 +2,7 @@ class Transaction:  # classe para gerenciar as transações
     def __init__(self):
         self._transactions = []
 
-        def add(self, description, amount, type): #Função responsavel por adicionar uma transação
+    def add(self, description, amount, type): #Função responsavel por adicionar uma transação
             if type not in ["receita", "despesa"]:
                 raise ValueError("Tipo deve ser 'receita' ou 'despesa'") #Validação para garantir que o tipo seja válido
             self._transactions.append({

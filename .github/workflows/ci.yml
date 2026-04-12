@@ -1,0 +1,7 @@
+name: CI - Finance Control
+
+on: 
+  push:
+    branches: ["*"]
+  pull_request:
+    branches: [main]
