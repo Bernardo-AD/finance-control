@@ -1,4 +1,4 @@
-from src.transaction import Transaction
+from transaction import Transaction
 
 def generate_report(transaction: Transaction):
     print("==== RELATÓRIO FINANCEIRO ====")
