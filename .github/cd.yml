@@ -4,10 +4,12 @@ on:
   push:
     branches: ["main"]
 
-
 jobs:
   release:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v3
@@ -24,12 +26,8 @@ jobs:
         run: python -m pytest tests/
 
       - name: Criar release no GitHub
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: v${{ github.run_number }}
-          release_name: Release v${{ github.run_number }}
+          name: Release v${{ github.run_number }}
           body: Deploy automático gerado pelo pipeline CD
-          draft: false
-          prerelease: false
