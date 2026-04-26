@@ -1,0 +1,68 @@
+{
+  "Maio": {
+    "name": "Maio",
+    "income": 3100.0,
+    "limit": 2700.0,
+    "reserves": [
+      {
+        "description": "Carro",
+        "amount": 500.0
+      },
+      {
+        "description": "Teste",
+        "amount": 250.0
+      }
+    ],
+    "subscriptions": [
+      {
+        "description": "Gympass",
+        "amount": 95.0
+      },
+      {
+        "description": "Meli+",
+        "amount": 9.0
+      }
+    ],
+    "cards": [
+      {
+        "name": "Nubank",
+        "expenses": [
+          {
+            "description": "Requiem",
+            "amount": 93.33,
+            "total": 280.0,
+            "installments": 3,
+            "current": 2
+          }
+        ]
+      },
+      {
+        "name": "Mercado Pago",
+        "expenses": [
+          {
+            "description": "Kit Cuecas Rebook",
+            "amount": 55.0,
+            "total": null,
+            "installments": null,
+            "current": null
+          },
+          {
+            "description": "perfume",
+            "amount": 83.33,
+            "total": 250.0,
+            "installments": 3,
+            "current": 1
+          }
+        ]
+      }
+    ]
+  },
+  "Junho": {
+    "name": "Junho",
+    "income": 3000.0,
+    "limit": 900.0,
+    "reserves": [],
+    "subscriptions": [],
+    "cards": []
+  }
+}
